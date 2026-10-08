@@ -1,0 +1,16 @@
+
+================ FUNCTIONAL COVERAGE ================
+  opcode executed    : 15 / 15 bins
+  branch outcomes    : 5 / 5 bins
+  forwarding         : 5 / 5 bins
+  dest registers     : 16 / 16 bins
+  op x fwd cross     : 10 / 10 bins
+  shift amount 0/15  : 2 / 2 bins
+  branch direction   : 2 / 2 bins
+  TOTAL functional coverage = 55 / 55 = 100 %
+======================================================
+tests run          : 303
+tests failed       : 0
+assertion checks   : 22825, assertion failures : 0
+instructions       : 17095, cycles : 22219  (CPI = 1.29)
+RESULT: ** ALL TESTS PASSED **

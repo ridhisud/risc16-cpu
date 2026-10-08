@@ -1,0 +1,47 @@
+
+13. Printing statistics.
+
+=== cpu_top ===
+
+   Number of wires:              27213
+   Number of wire bits:          35272
+   Number of public wires:         552
+   Number of public wire bits:    8611
+   Number of ports:                  8
+   Number of port bits:             52
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              26678
+     AND2_X1                       140
+     AND3_X1                         8
+     AND4_X1                         1
+     AOI211_X1                      78
+     AOI21_X1                     1398
+     AOI221_X1                     884
+     AOI222_X1                     392
+     AOI22_X1                     2170
+     DFF_X1                       8547
+     INV_X1                        447
+     MUX2_X1                      8731
+     NAND2_X1                      433
+     NAND3_X1                       95
+     NAND4_X1                       28
+     NOR2_X1                       617
+     NOR3_X1                        80
+     NOR4_X1                       237
+     OAI211_X1                     581
+     OAI21_X1                      522
+     OAI221_X1                     150
+     OAI222_X1                      44
+     OAI22_X1                      446
+     OAI33_X1                       10
+     OR2_X1                        537
+     OR3_X1                         11
+     OR4_X1                         25
+     XNOR2_X1                       57
+     XOR2_X1                         9
+
+   Chip area for module '\cpu_top': 66408.762000
+     of which used for sequential elements: 38649.534000 (58.20%)
+

@@ -1,0 +1,61 @@
+OpenROAD 26Q3-2394-g2e0b9f8bbf 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: NangateOpenCellLibrary.tech.lef, created 22 layers, 27 vias
+[INFO ODB-0227] LEF file: NangateOpenCellLibrary.macro.mod.lef, created 135 library cells
+===== AREA =====
+Design area 66409 um^2 100% utilization.
+===== TIMING SUMMARY =====
+wns max -118.79
+tns max -6822.52
+===== CRITICAL PATH =====
+Startpoint: _50579_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _46036_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout      Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------------
+                   0.000    0.000    0.000   clock clk (rise edge)
+                            0.000    0.000   clock network delay (ideal)
+                   0.000    0.000    0.000 ^ _50579_/CK (DFF_X1)
+  1002 1429.901    3.266    3.499    3.499 ^ _50579_/Q (DFF_X1)
+   611  935.115    6.975   16.146   19.645 v _26951_/ZN (INV_X1)
+  1016 1677.617    0.267  108.637  128.282 ^ _33291_/ZN (NOR2_X1)
+     1    1.433    0.306    0.042  128.324 v _33595_/ZN (AOI221_X1)
+     1    1.651    0.082    0.132  128.455 ^ _33599_/ZN (AOI22_X1)
+     1    1.497    0.139    0.013  128.469 v _33600_/ZN (NOR2_X1)
+     1    1.584    0.119    0.115  128.584 ^ _33606_/ZN (AOI221_X1)
+     1    1.471    0.029    0.034  128.617 v _33632_/ZN (OAI22_X1)
+     1    1.662    0.051    0.070  128.688 ^ _33633_/ZN (AOI211_X1)
+     1    1.403    0.032    0.019  128.707 v _33634_/ZN (OAI21_X1)
+     1    1.140    0.040    0.043  128.750 ^ _33743_/ZN (AOI211_X1)
+                   0.040    0.000  128.750 ^ _46036_/D (DFF_X1)
+                                   128.750   data arrival time
+
+                   0.000   10.000   10.000   clock clk (rise edge)
+                            0.000   10.000   clock network delay (ideal)
+                            0.000   10.000   clock reconvergence pessimism
+                                    10.000 ^ _46036_/CK (DFF_X1)
+                           -0.040    9.960   library setup time
+                                     9.960   data required time
+---------------------------------------------------------------------------------
+                                     9.960   data required time
+                                  -128.750   data arrival time
+---------------------------------------------------------------------------------
+                                  -118.790   slack (VIOLATED)
+
+
+===== POWER =====
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             6.20e-03   2.10e-04   6.54e-04   7.06e-03  57.4%
+Combinational          2.96e-03   1.76e-03   5.17e-04   5.24e-03  42.6%
+Clock                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  9.16e-03   1.97e-03   1.17e-03   1.23e-02 100.0%
+                          74.5%      16.0%       9.5%

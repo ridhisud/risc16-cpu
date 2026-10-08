@@ -1,0 +1,10 @@
+# yosys synthesis to the Nangate45 library (open source, 45nm) -> netlist.v + area_report.txt
+# run from the synth folder:  yosys -q -l yosys.log -s synth_nangate.ys
+read_verilog ../rtl/alu.v ../rtl/control.v ../rtl/cpu_top.v ../rtl/dmem.v ../rtl/imem.v ../rtl/immgen.v ../rtl/regfile.v
+hierarchy -top cpu_top
+synth -top cpu_top -flatten
+dfflibmap -liberty NangateOpenCellLibrary_typical.lib
+abc -liberty NangateOpenCellLibrary_typical.lib -D 10000
+opt_clean -purge
+tee -o area_report.txt stat -liberty NangateOpenCellLibrary_typical.lib
+write_verilog -noattr -noexpr -nohex -nodec netlist.v

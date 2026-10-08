@@ -1,0 +1,5 @@
+# yosys -s yosys_quick.ys   (rough LUT/FF count if you don't have Vivado handy)
+read_verilog ../rtl/alu.v ../rtl/control.v ../rtl/cpu_top.v ../rtl/dmem.v ../rtl/imem.v ../rtl/immgen.v ../rtl/regfile.v
+hierarchy -top cpu_top
+synth_xilinx -top cpu_top -flatten
+stat
